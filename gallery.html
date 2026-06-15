@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | D'Deloitte Electrical LTD</title>
+<meta name="description" content="Browse photos of D'Deloitte Electrical LTD's products, tools, warehouse and electricians at work.">
+<link rel="icon" href="images/logo-square.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .gallery-grid figure {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 0;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .gallery-grid figure:hover img { transform: scale(1.06); }
+  .gallery-grid figcaption {
+    padding: 16px 20px;
+    background: #fff;
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 980px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .gallery-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span>📍 22 Shell Road, Sapele, Delta State</span>
+      <span>📞 0706 339 6650</span>
+      <span>✉️ info@ddeloitteelectrical.com.ng</span>
+    </div>
+    <div class="topbar-social">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="D'Deloitte Electrical LTD logo">
+    </a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <span class="phone">0706 339 6650<span>Call us anytime</span></span>
+        <a href="contact.html" class="btn btn--orange">Get a Quote</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header" style="--hero-img: url('../images/gallery-cable-spools.jpg');">
+  <div class="container">
+    <h1>Our Gallery</h1>
+    <p class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Gallery</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">A Look Inside D'Deloitte Electrical</span>
+      <h2>Our Products, Tools &amp; Work in the Field</h2>
+      <p>A glimpse of the quality electrical accessories, equipment and tools we supply — and the work our team does on the ground.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure>
+        <img src="images/gallery-tools-flatlay.jpg" alt="Flat-lay of electrical hand tools including soldering iron, hammer, wrench, screwdrivers and multimeter">
+        <figcaption>Quality Electrical Tools &amp; Equipment</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery-wiring-closeup.jpg" alt="Electrician in protective gloves working on house wiring with pliers">
+        <figcaption>Our Team at Work — Wiring &amp; Installation</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery-cable-spools.jpg" alt="Rows of colourful cable spools stocked on warehouse shelving">
+        <figcaption>Cable Spools Ready for Supply</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery-store-aisle.jpg" alt="Aisle of an electrical store stocked with cables and accessories">
+        <figcaption>Inside Our Stock Room</figcaption>
+      </figure>
+      <figure>
+        <img src="images/about-cables.jpg" alt="Shelves of electrical cables and wire reels in different colours">
+        <figcaption>A Wide Range of Cables &amp; Wires</figcaption>
+      </figure>
+      <figure>
+        <img src="images/store-aisle-wires.jpg" alt="Long aisle of an electrical supply store with stacked wire reels">
+        <figcaption>Stocked &amp; Ready to Supply</figcaption>
+      </figure>
+      <figure>
+        <img src="images/chains-cables.jpg" alt="Display of chains, cables and electrical hardware on store racking">
+        <figcaption>Hardware &amp; Cable Accessories</figcaption>
+      </figure>
+      <figure>
+        <img src="images/service-accessories.jpg" alt="Coiled blue and black electrical cables on a shelf">
+        <figcaption>Electrical Cable Accessories</figcaption>
+      </figure>
+      <figure>
+        <img src="images/tools-closeup.jpg" alt="Close-up of red and yellow handled screwdrivers and electrical tools">
+        <figcaption>Tools of the Trade</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <div class="banner-cta" style="--hero-img: url('../images/hero-electrician.jpg');">
+      <span class="eyebrow">Like What You See?</span>
+      <h2>Get These Quality Products Supplied to You Today</h2>
+      <p>Reach out to our team and let us help you find the right electrical accessories, equipment and appliances for your project.</p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn btn--orange">Contact Us</a>
+        <a href="services.html" class="btn btn--outline">View Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="brand-logo" src="images/logo.png" alt="D'Deloitte Electrical LTD logo">
+        <p>A leading provider of high-quality electrical accessories, equipment and appliances — committed to safety, durability and customer satisfaction.</p>
+        <div class="socials mt-40">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="services.html">Electrical Accessories</a></li>
+          <li><a href="services.html">Electrical Equipment</a></li>
+          <li><a href="services.html">Electrical Appliances</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <address>
+          <p>📍 22 Shell Road, Sapele, Delta State, Nigeria</p>
+          <p>📞 0706 339 6650</p>
+          <p>✉️ info@ddeloitteelectrical.com.ng</p>
+          <p>🕐 Mon – Sat: 8:00 AM – 6:00 PM</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 D'Deloitte Electrical LTD. All Rights Reserved.</p>
+      <p>Powering homes, businesses &amp; industries across Nigeria and beyond.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
