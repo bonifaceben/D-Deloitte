@@ -333,6 +333,21 @@ h1, h2, h3, h4 {
 }
 .split img { border-radius: var(--radius); box-shadow: var(--shadow); }
 .split h2 { font-size: 1.9rem; margin-bottom: 16px; }
+
+/* Placeholder for sections awaiting a real photo */
+.image-placeholder {
+  min-height: 320px;
+  border-radius: var(--radius);
+  border: 2px dashed #c7cedb;
+  background: var(--gray-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text);
+  font-weight: 600;
+  padding: 30px;
+}
 .checklist li {
   display: flex;
   align-items: flex-start;
