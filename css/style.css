@@ -510,6 +510,12 @@ h1, h2, h3, h4 {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
+.home-gallery img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  background: #fff;
+}
 .text-center { text-align: center; }
 .mt-40 { margin-top: 40px; }
 .mb-30 { margin-bottom: 30px; }
