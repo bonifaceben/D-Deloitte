@@ -1,6 +1,6 @@
 <?php
 /**
- * Generic mail handler for the D'Deloitte Electrical LTD website forms
+ * Generic mail handler for the D'DELOITTE website forms
  * (request-a-quote bar, contact form, newsletter signup).
  *
  * Update $to_email below to the address that should receive submissions.
@@ -67,7 +67,7 @@ switch ($form_type) {
 }
 
 $host = clean_header($_SERVER['HTTP_HOST'] ?? 'localhost');
-$headers = "From: D'Deloitte Electrical Website <noreply@$host>\r\n";
+$headers = "From: D'DELOITTE Website <noreply@$host>\r\n";
 if ($email !== '') {
     $headers .= 'Reply-To: ' . clean_header($email) . "\r\n";
 }
